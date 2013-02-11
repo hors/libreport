@@ -127,7 +127,7 @@ PKG_CHECK_MODULES([DBUS], [dbus-1])
 PKG_CHECK_MODULES([LIBXML], [libxml-2.0])
 PKG_CHECK_MODULES([NSS], [nss])
 PKG_CHECK_MODULES([CURL], [libcurl])
-PKG_CHECK_MODULES([BTPARSER], [btparser])
+PKG_CHECK_MODULES([SATYR], [satyr])
 PKG_CHECK_MODULES([PROXY], [libproxy-1.0], [
     AC_DEFINE([HAVE_PROXY], [1], [Use libproxy])
 ], [:])
