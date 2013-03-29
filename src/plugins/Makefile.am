@@ -55,7 +55,8 @@ dist_events_DATA = $(reporters_events) \
     report_RHTSupport.xml \
     report_Kerneloops.xml \
     report_Uploader.xml \
-    report_EmergencyAnalysis.xml
+    report_EmergencyAnalysis.xml \
+    post_report.xml
 
 @INTLTOOL_XML_RULE@
 
@@ -89,7 +90,8 @@ EXTRA_DIST = $(reporters_extra_dist) \
     report_RHTSupport.xml.in \
     report_Kerneloops.xml.in \
     report_Uploader.xml.in \
-    report_EmergencyAnalysis.xml.in
+    report_EmergencyAnalysis.xml.in \
+    post_report.xml.in
 
 libexec_SCRIPTS = abrt-screencast
 
