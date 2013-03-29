@@ -423,6 +423,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %config(noreplace) %{_sysconfdir}/libreport/plugins/bugzilla_format_libreport.conf
 %config(noreplace) %{_sysconfdir}/libreport/plugins/bugzilla_format_kernel.conf
 %{_sysconfdir}/libreport/events/report_Bugzilla.xml
+%{_sysconfdir}/libreport/events/post_report.xml
 %config(noreplace) %{_sysconfdir}/libreport/events/report_Bugzilla.conf
 %config(noreplace) %{_sysconfdir}/libreport/events.d/bugzilla_event.conf
 # FIXME: remove with the old gui
