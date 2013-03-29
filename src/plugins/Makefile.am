@@ -27,7 +27,9 @@ reporters_plugin_conf += bugzilla.conf \
     bugzilla_format.conf \
     bugzilla_formatdup.conf \
     bugzilla_format_libreport.conf \
-    bugzilla_format_kernel.conf
+    bugzilla_format_kernel.conf \
+    bugzilla_format_anaconda.conf \
+    bugzilla_formatdup_anaconda.conf
 
 endif
 
@@ -65,7 +67,8 @@ dist_eventsconf_DATA = \
     bugzilla_event.conf \
     rhtsupport_event.conf \
     uploader_event.conf \
-    emergencyanalysis_event.conf
+    emergencyanalysis_event.conf \
+    anaconda_event.conf
 
 reporters_extra_dist =
 if BUILD_BUGZILLA

@@ -15,7 +15,7 @@ workflowsconfdir = $(WORKFLOWS_CONF_DIR)
 
 dist_workflowsconf_DATA =\
     report_fedora.conf \
-    anaconda_event.conf \
+    report_anaconda.conf \
     report_rhel.conf
 
 @INTLTOOL_XML_RULE@
