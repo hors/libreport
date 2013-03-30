@@ -249,6 +249,7 @@ Summary: Default configuration for reporting anaconda bugs
 Group: Applications/File
 Requires: libreport-plugin-reportuploader
 Requires: libreport-plugin-bugzilla
+Requires: libreport-plugin-ureport
 
 %description anaconda
 Default configuration for reporting Anaconda problems using Fedora
@@ -414,6 +415,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_bindir}/reporter-ureport
 #%{_mandir}/man1/reporter-ureport.1.gz
 %{_sysconfdir}/libreport/events/report_uReport.xml
+%{_sysconfdir}/libreport/events/post_report.xml
 
 %files plugin-bugzilla
 %defattr(-,root,root,-)
@@ -423,7 +425,6 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %config(noreplace) %{_sysconfdir}/libreport/plugins/bugzilla_format_libreport.conf
 %config(noreplace) %{_sysconfdir}/libreport/plugins/bugzilla_format_kernel.conf
 %{_sysconfdir}/libreport/events/report_Bugzilla.xml
-%{_sysconfdir}/libreport/events/post_report.xml
 %config(noreplace) %{_sysconfdir}/libreport/events/report_Bugzilla.conf
 %config(noreplace) %{_sysconfdir}/libreport/events.d/bugzilla_event.conf
 # FIXME: remove with the old gui
