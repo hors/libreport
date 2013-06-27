@@ -40,12 +40,10 @@ BuildRequires: asciidoc
 BuildRequires: xmlto
 BuildRequires: newt-devel
 BuildRequires: libproxy-devel
-BuildRequires: btparser-devel
+BuildRequires: satyr-devel
 %if %{with bugzilla}
 BuildRequires: xmlrpc-c-devel
 %endif
-##satyr migration:
-#BuildRequires: satyr-devel
 BuildRequires: doxygen
 Requires: libreport-filesystem = %{version}-%{release}
 # required for update from old report library, otherwise we obsolete report-gtk
